@@ -1,4 +1,4 @@
-const { connectionTest, lengthOfLastWord } = require('../src/index.js');
+const { connectionTest, lengthOfLastWord } = require('../src/leetCode58.js');
 
 describe('The index page has the following functions: ', () => {
   it('The connectionTest should return true', () => {
