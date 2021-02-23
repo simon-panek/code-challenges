@@ -1,0 +1,23 @@
+{
+  "name": "code-challenges",
+  "version": "1.0.0",
+  "description": "## Author: Simon Panek",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest --coverage"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/simon-panek/code-challenges.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/simon-panek/code-challenges/issues"
+  },
+  "homepage": "https://github.com/simon-panek/code-challenges#readme",
+  "dependencies": {
+    "jest": "^26.6.3"
+  }
+}
