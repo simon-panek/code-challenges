@@ -11,14 +11,14 @@ function connectionTest () {
 
 const lengthOfLastWord = (s) => {
   let length = 0;
-  if (s === '') return length;
-  let arrayOfStrings = s.split(' ');
+  if (s === '') return length; //error check for empty string
+  let arrayOfStrings = s.split(' '); //split into array of strings
   let i = 1;
-  while(arrayOfStrings[arrayOfStrings.length-i].length === 0) {
+  while(arrayOfStrings[arrayOfStrings.length-i].length === 0) { //steps back from end of array until a non-space string is found 
     i++;
-    if(i === arrayOfStrings.length + 1) return length = 0;
+    if(i === arrayOfStrings.length + 1) return length = 0; //returns 0 if the array only contains spaces
   } 
-  length = arrayOfStrings[arrayOfStrings.length-i].length; 
+  length = arrayOfStrings[arrayOfStrings.length-i].length;  //sets length of last word
   return length; 
 };
 
