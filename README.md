@@ -9,6 +9,7 @@ This repository is a space to store the online code challenges that I have solve
 #### LeetCode
 
 [Challenge # 58 - Length of Last Word](./src/leetCode58.js)
+[Challenge # 3 - Longest Non-repeating Substring](./src/leetCode3.js)
 
 #### HackerRank
 
