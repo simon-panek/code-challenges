@@ -1,6 +1,8 @@
 const { connectionTest, lengthOfLastWord } = require('../src/leetCode58.js');
 const { connectionTest2, longestSubstring } = require('../src/leetCode3.js');
 
+// LeetCode #58 -------------------------------------------------------------
+
 describe('The leetCode58 page has the following functions: ', () => {
   it('The connectionTest from leetCode58 should return true', () => {
     expect(connectionTest()).toBe(true);
@@ -24,6 +26,10 @@ describe('The leetCode58 page has the following functions: ', () => {
   })
 })
 
+// End LC#58 
+
+// LeetCode #3 ---------------------------------------------------------------
+
 describe('The leetCode3 page has the following functions: ', () => {
   it('The connectionTest from leetCode3 should return true', () => {
     expect(connectionTest2()).toBe(true);
@@ -46,3 +52,5 @@ describe('The leetCode3 page has the following functions: ', () => {
     expect(longestSubstring(' !@#$%^&*()abcdefghijklmnopqrstuvwxyz1234567890ABCDEFGHIJKLMNOPQRSTUVWXYZ ')).toEqual(73);
   })
 })
+
+// End LC#3
