@@ -30,7 +30,7 @@ const longestSubstring = (s) => {
     }
   }
   // console.log('2', {longestSubstring});
-  return longestSubstring;
+  return longestSubstring.length;
 };
 
 // Success - 

@@ -33,15 +33,16 @@ describe('The leetCode3 page has the following functions: ', () => {
     expect(longestSubstring('')).toEqual(0);
   })
   it('(LC#3) The longestSubstring function should return the longest non-repeating substring given a string', ()=> {
-    expect(longestSubstring('The dog ran fast')).toEqual('The dog');
-    expect(longestSubstring('one two three')).toEqual('wo thre');
-    expect(longestSubstring('one two three four five six seven eight nine ten')).toEqual('our five');
-    expect(longestSubstring('it was a big gray elephant')).toEqual('gray el');
-    expect(longestSubstring('a')).toEqual('a');
-    expect(longestSubstring(' ab ')).toEqual(' ab');
-    expect(longestSubstring('ab  ')).toEqual('ab ');
-    expect(longestSubstring('   ')).toEqual(' ');
-    expect(longestSubstring('thisisareallylongsingleword')).toEqual('singleword');
-    expect(longestSubstring(' !@#$%^&*()abcdefghijklmnopqrstuvwxyz1234567890ABCDEFGHIJKLMNOPQRSTUVWXYZ ')).toEqual(' !@#$%^&*()abcdefghijklmnopqrstuvwxyz1234567890ABCDEFGHIJKLMNOPQRSTUVWXYZ');
+    expect(longestSubstring('The dog ran fast')).toEqual(7);
+    expect(longestSubstring('one two three')).toEqual(7);
+    expect(longestSubstring('one two three four five six seven eight nine ten')).toEqual(8);
+    expect(longestSubstring('it was a big gray elephant')).toEqual(7);
+    expect(longestSubstring('a')).toEqual(1);
+    expect(longestSubstring(' ab ')).toEqual(3);
+    expect(longestSubstring('ab  ')).toEqual(3);
+    expect(longestSubstring('abcabcbb')).toEqual(3);
+    expect(longestSubstring('   ')).toEqual(1);
+    expect(longestSubstring('thisisareallylongsingleword')).toEqual(10);
+    expect(longestSubstring(' !@#$%^&*()abcdefghijklmnopqrstuvwxyz1234567890ABCDEFGHIJKLMNOPQRSTUVWXYZ ')).toEqual(73);
   })
 })
