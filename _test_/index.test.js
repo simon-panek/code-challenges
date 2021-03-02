@@ -1,32 +1,6 @@
 const { connectionTest, lengthOfLastWord } = require('../src/leetCode58.js');
 const { connectionTest2, longestSubstring } = require('../src/leetCode3.js');
 
-// LeetCode #58 -------------------------------------------------------------
-
-describe('The leetCode58 page has the following functions: ', () => {
-  it('The connectionTest from leetCode58 should return true', () => {
-    expect(connectionTest()).toBe(true);
-  })
-
-  it('(LC#58) The lengthOfLastWord function should return 0 if a string with no length or no alpha characters is provided', ()=> {
-    expect(lengthOfLastWord('')).toEqual(0);
-    expect(lengthOfLastWord(' ')).toEqual(0);
-  })
-  it('(LC#58) The lengthOfLastWord function should return the length of the final word in a string', ()=> {
-    expect(lengthOfLastWord('The dog ran fast')).toEqual(4);
-    expect(lengthOfLastWord('one two three')).toEqual(5);
-    expect(lengthOfLastWord('one two three four five six seven eight nine ten')).toEqual(3);
-    expect(lengthOfLastWord('it was a big gray elephant')).toEqual(8);
-    expect(lengthOfLastWord('a')).toEqual(1);
-    expect(lengthOfLastWord(' a b ')).toEqual(1);
-    expect(lengthOfLastWord(' a b  ')).toEqual(1);
-    expect(lengthOfLastWord('   ')).toEqual(0);
-    expect(lengthOfLastWord('thisisareallylongsingleword')).toEqual(27);
-    expect(lengthOfLastWord('     thisisareallylongsingleword')).toEqual(27);
-  })
-})
-
-// End LC#58 
 
 // LeetCode #3 ---------------------------------------------------------------
 
@@ -54,3 +28,30 @@ describe('The leetCode3 page has the following functions: ', () => {
 })
 
 // End LC#3
+
+// LeetCode #58 -------------------------------------------------------------
+
+describe('The leetCode58 page has the following functions: ', () => {
+  it('The connectionTest from leetCode58 should return true', () => {
+    expect(connectionTest()).toBe(true);
+  })
+
+  it('(LC#58) The lengthOfLastWord function should return 0 if a string with no length or no alpha characters is provided', ()=> {
+    expect(lengthOfLastWord('')).toEqual(0);
+    expect(lengthOfLastWord(' ')).toEqual(0);
+  })
+  it('(LC#58) The lengthOfLastWord function should return the length of the final word in a string', ()=> {
+    expect(lengthOfLastWord('The dog ran fast')).toEqual(4);
+    expect(lengthOfLastWord('one two three')).toEqual(5);
+    expect(lengthOfLastWord('one two three four five six seven eight nine ten')).toEqual(3);
+    expect(lengthOfLastWord('it was a big gray elephant')).toEqual(8);
+    expect(lengthOfLastWord('a')).toEqual(1);
+    expect(lengthOfLastWord(' a b ')).toEqual(1);
+    expect(lengthOfLastWord(' a b  ')).toEqual(1);
+    expect(lengthOfLastWord('   ')).toEqual(0);
+    expect(lengthOfLastWord('thisisareallylongsingleword')).toEqual(27);
+    expect(lengthOfLastWord('     thisisareallylongsingleword')).toEqual(27);
+  })
+})
+
+// End LC#58 
