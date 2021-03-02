@@ -14,27 +14,27 @@ const longestSubstring = (s) => {
   let tempSubstring = '';
 
   for (let i=0; i<s.length; i++){
-    console.log({longestSubstring});
-    console.log({tempSubstring});
+    // console.log({longestSubstring});
+    // console.log({tempSubstring});
     if(tempSubstring.includes(s[i])){
-      console.log('updating temp');
+      // console.log('updating temp');
       let trim = tempSubstring.indexOf(s[i]);
-      console.log({trim});
-      tempSubstring= tempSubstring.slice(trim);
+      // console.log({trim});
+      tempSubstring = tempSubstring.slice(trim +1);
       
     }
     tempSubstring = tempSubstring + s[i];
-    console.log('2', {tempSubstring});
+    // console.log('2', {tempSubstring});
     if(tempSubstring.length > longestSubstring.length) {
       longestSubstring = tempSubstring;
     }
   }
-  console.log('2', {longestSubstring});
+  // console.log('2', {longestSubstring});
   return longestSubstring;
 };
 
-// Success - Accepted 02/23/2021 13:08
-// Runtime: 76 ms, faster than 79.20% of JavaScript online submissions for Length of Last Word.
-// Memory Usage: 39 MB, less than 9.66% of JavaScript online submissions for Length of Last Word.
+// Success - 
+// Runtime: 
+// Memory Usage: 
 
 module.exports = { connectionTest2, longestSubstring };

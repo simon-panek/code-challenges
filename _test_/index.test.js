@@ -34,8 +34,8 @@ describe('The leetCode3 page has the following functions: ', () => {
   })
   it('(LC#3) The longestSubstring function should return the longest non-repeating substring given a string', ()=> {
     expect(longestSubstring('The dog ran fast')).toEqual('The dog');
-    expect(longestSubstring('one two three')).toEqual('one tw');
-    expect(longestSubstring('one two three four five six seven eight nine ten')).toEqual('eight n');
+    expect(longestSubstring('one two three')).toEqual('wo thre');
+    expect(longestSubstring('one two three four five six seven eight nine ten')).toEqual('our five');
     expect(longestSubstring('it was a big gray elephant')).toEqual('gray el');
     expect(longestSubstring('a')).toEqual('a');
     expect(longestSubstring(' ab ')).toEqual(' ab');
