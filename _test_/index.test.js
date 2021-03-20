@@ -60,7 +60,7 @@ describe('The leetCode58 page has the following functions: ', () => {
 // LeetCode #1402 -------------------------------------------------------------
 
 describe('The leetCode1402 page has the following functions: ', () => {
-  it('The connectionTest from leetCode1402 should return true', () => {
+  it('The connectionTest3 from leetCode1402 should return true', () => {
     expect(connectionTest3()).toBe(true);
   })
 })
