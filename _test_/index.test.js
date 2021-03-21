@@ -63,6 +63,11 @@ describe('The leetCode1402 page has the following functions: ', () => {
   it('The connectionTest3 from leetCode1402 should return true', () => {
     expect(connectionTest3()).toBe(true);
   })
+
+  // it('The dish reducer should return the maximum sum of Like-time that a given input will allow ', ()=> {
+  //   let input = [-1, -8, 0, 5, -9];
+  //   expect(maxSatisfaction(input)).toEqual(14);
+  // })
 })
 
 // End LC#1402
