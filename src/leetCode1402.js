@@ -9,6 +9,9 @@ function connectionTest3 () {
 // Like-time coefficient of a dish is defined as the time taken to cook that dish including previous dishes multiplied by its satisfaction level  i.e.  time[i]*satisfaction[i]
 // Return the maximum sum of Like-time coefficient that the chef can obtain after dishes preparation.
 // Dishes can be prepared in any order and the chef can discard some dishes to get this maximum value.
+// n== satisfaction.length
+// 1 <= n <= 500
+//-10^3 <= satisfaction[i] <= 10^3
 
 const maxSatisfaction = (satisfaction) => {
   //solve challenge here
