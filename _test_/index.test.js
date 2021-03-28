@@ -78,6 +78,11 @@ describe('The leetCode1402 page has the following functions: ', () => {
   //   let input = [-1, -4, -5];
   //   expect(maxSatisfaction(input)).toEqual(0);
   // })
+
+  // it('The dish reducer should return the maximum sum of Like-time that a given input will allow ', ()=> {
+  //   let input = [-2,5,-1,0,3,-3];
+  //   expect(maxSatisfaction(input)).toEqual(35);
+  // })
   
 })
 
