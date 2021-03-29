@@ -14,11 +14,42 @@ function connectionTest3 () {
 //-10^3 <= satisfaction[i] <= 10^3
 
 const maxSatisfaction = (satisfaction) => {
-  //solve challenge here
+  let output = 0;
+  let nullCheck = false;
+  let sorted = [];
+  let tempTotal = 0;
+
+  for (let i=0; i < satisfaction.length; i++) { //check for all negative satisfaction
+    if(satisfaction[i] > 0) {
+      nullCheck = true;
+      break;
+    }
+  }
+
+  sorted = satisfaction.sort((a,b) => {
+    return a-b;
+  });
+
+  for (let j = 0; j < sorted.length; j++){
+    tempTotal = 0;
+
+    for (let k = 0; k+j < sorted.length; k++){
+      tempTotal = tempTotal + (sorted[k+j] * (k+1));
+    }
+    if(tempTotal > output) {
+      output = tempTotal;
+    }
+  }
+
+  if(nullCheck === false) {
+    return output = 0;
+  } else {
+    return output;
+  }
 };
 
-// Success - 
-// Runtime: 
-// Memory Usage: 
+// Success - Accepted 03/29/2021 14:22
+// Runtime: 88ms, faster than 53.42% of JavaScript online submissions for Reducing Dishes.
+// Memory Usage: 38.7 MB, less than 78.08% of JavaScript online submissions for Reducing Dishes.
 
 module.exports = { connectionTest3, maxSatisfaction };
