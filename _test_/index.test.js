@@ -1,6 +1,7 @@
 const { connectionTest, lengthOfLastWord } = require('../src/leetCode58.js');
 const { connectionTest2, longestSubstring } = require('../src/leetCode3.js');
 const { connectionTest3, maxSatisfaction } = require('../src/leetCode1402.js');
+const { connectionTest4, maxScoreWords } = require('../src/leetCode1255.js');
 
 
 // LeetCode #3 ---------------------------------------------------------------
@@ -56,6 +57,16 @@ describe('The leetCode58 page has the following functions: ', () => {
 })
 
 // End LC#58 
+
+// LeetCode #1255 -------------------------------------------------------------
+
+describe('The leetCode1255 page has the following functions: ', () => {
+  it('The connectionTest from leetCode1255 should return true', () => {
+    expect(connectionTest()).toBe(true);
+  })
+})
+
+// End LC#1255
 
 // LeetCode #1402 -------------------------------------------------------------
 
