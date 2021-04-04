@@ -71,6 +71,13 @@ describe('The leetCode1255 page has the following functions: ', () => {
   //   let score = [1,0,9,5,0,0,3,0,0,0,0,0,0,0,2,0,0,0,0,0,0,0,0,0,0,0];
   //   expect(maxScoreWords(words, letters, score)).toEqual(23);
   // })
+
+  // it('The max word score should return the highest possible value ', () => {
+  //   let words = ["xxxz","ax","bx","cx"];
+  //   let letters = ["z","a","b","c","x","x","x"];
+  //   let score = [4,4,4,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,5,0,10];
+  //   expect(maxScoreWords(words, letters, score)).toEqual(27);
+  // })
 })
 
 // End LC#1255
