@@ -64,6 +64,13 @@ describe('The leetCode1255 page has the following functions: ', () => {
   it('The connectionTest from leetCode1255 should return true', () => {
     expect(connectionTest()).toBe(true);
   })
+
+  // it('The max word score should return the highest possible value ', () => {
+  //   let words = ["dog","cat","dad","good"];
+  //   let letters = ["a","a","c","d","d","d","g","o","o"];
+  //   let score = [1,0,9,5,0,0,3,0,0,0,0,0,0,0,2,0,0,0,0,0,0,0,0,0,0,0];
+  //   expect(maxScoreWords(words, letters, score)).toEqual(23);
+  // })
 })
 
 // End LC#1255
