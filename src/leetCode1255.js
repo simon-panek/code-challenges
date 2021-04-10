@@ -32,8 +32,6 @@ let scoredWords = [];
       let wordValue = 0;
       //sum character values for the word
       scoredWords.push(wordValue);
-    } else {
-      continue;
     }
   })
 };
