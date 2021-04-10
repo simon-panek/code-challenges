@@ -21,16 +21,27 @@ const maxScoreWords = (words, letters, score) => {
     }
   })
 
-  if(badWords === words){ //if no words are buildable, return 0
-    return 0;
+  // if(badWords === words){ //if no words are buildable, return 0 //badwords is not defined here
+  //   return 0;
+  // }
+
+  let alpha = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z'];
+  let scoreGuideObj = {};
+
+  for(let i=0; i<26; i++){
+    let key = alpha[i];
+    let value = score[i];
+    scoreGuideObj = {... scoreGuideObj, [key]: value};
   }
+
+  console.log({scoreGuideObj});
 
   //score words that are possible
 let scoredWords = [];
   words.forEach(word => {
     if(!badWords.includes(word)){
       let wordValue = 0;
-      //sum character values for the word
+      //sum character values for the word (use hashmap here)
       scoredWords.push(wordValue);
     }
   })
