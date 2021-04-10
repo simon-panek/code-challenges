@@ -21,9 +21,21 @@ const maxScoreWords = (words, letters, score) => {
     }
   })
 
-  if(badWords === words){ //if no words are build able, return 0
+  if(badWords === words){ //if no words are buildable, return 0
     return 0;
   }
+
+  //score words that are possible
+let scoredWords = [];
+  words.forEach(word => {
+    if(!badWords.includes(word)){
+      let wordValue = 0;
+      //sum character values for the word
+      scoredWords.push(wordValue);
+    } else {
+      continue;
+    }
+  })
 };
 
 //Constraints
