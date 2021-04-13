@@ -10,8 +10,8 @@ function connectionTest4 () {
 // It is not necessary to use all characters in letters and each letter can only be used once. Score of letters 'a', 'b', 'c', ... ,'z' is given by score[0], score[1], ... , score[25] respectively.
 
 const maxScoreWords = (words, letters, score) => {
+  let badWords = [];
   words.forEach(word => { //loop through words
-    let badWords = [];
     for(let i = 0; i<word.length; i++){ //loop through characters in each word
       if(letters.includes(word[i])){ //check if each character is available in the letters array
         continue; //if available, continue
@@ -21,9 +21,10 @@ const maxScoreWords = (words, letters, score) => {
     }
   })
 
-  // if(badWords === words){ //if no words are buildable, return 0 //badwords is not defined here
-  //   return 0;
-  // }
+  if(badWords === words){ //if no words are buildable, return 0
+    console.log('No viable words');
+    return 0;
+  }
 
   let alpha = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z'];
   let scoreGuideObj = {};
